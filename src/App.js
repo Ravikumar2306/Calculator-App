@@ -1,36 +1,82 @@
 import './App.css';
+import React, {useEffect, useState} from 'react';
+import Keypad from './components/keypad.js';
+import Screen from './components/screen.js';
 
 function App() {
+  
+  const [value, setValue] = useState('');
+
+  const handleClick = (val) => {
+    switch(val) {
+      case 'all-clear':
+        setValue('');
+      break;
+      case '=':
+        try {
+          setValue(eval(value));
+        } catch {
+          setValue('Error');
+        }
+      break;
+      case 'Backspace':
+        setValue(String(value).slice(0, -1));
+      break;
+      default:
+        setValue(value + val);
+        break;
+    }
+  }
+
+  const handleKeyDown = (event) => {
+    const {key} = event;
+    switch(key) {
+      case 'Escape':
+        handleClick('all-clear');
+      break;
+      case 'Enter':
+        handleClick('=');
+      break;
+      case 'Backspace':
+        handleClick('Backspace');
+      break;
+      case '+':
+      case '-':
+      case '*':
+      case '/':
+      case '.':
+        handleClick(key);
+      break;
+      case '0':
+      case '1':
+      case '2':
+      case '3':
+      case '4':
+      case '5':
+      case '6':
+      case '7':
+      case '8':
+      case '9':
+        handleClick(key);
+      break;
+      default:
+        break;
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+    };
+}, [value]);
+
   return (
     <div className="calculator">
-        <input type="text" className="calculator-screen" id="screen" readonly></input>
-        
-        <div className="calculator-keys">
-            <button type="button" className="operator" value="+">+</button>
-            <button type="button" className="operator" value="-">–</button>
-            <button type="button" className="operator" value="*">&times;</button>
-            <button type="button" className="operator" value="/">&divide;</button>
-
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-
-            <button type="button" value="0">0</button>
-            <button type="button" className="decimal" value=".">.</button>
-            <button type="button" className="all-clear" value="all-clear">AC</button>
-
-            <button type="button" className="equal-sign operator" value="=">=</button>
-        </div>
+        <Screen value={value} />
+        <Keypad handleClick={handleClick} />
     </div>
-  );
+  );    
 }
 
 export default App;
