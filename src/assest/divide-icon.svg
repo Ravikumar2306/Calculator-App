@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="600"
+   id="svg2454"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Obelus symbol.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2456">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2462" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.79549513"
+     inkscape:cx="194.51361"
+     inkscape:cy="267.78339"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="881"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata2459">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="font-size:431.92422485px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       d="M 250,225.48828 C 254.68739,225.48849 258.69129,227.14865 262.01172,230.46875 C 265.33191,233.78926 266.99206,237.79317 266.99219,242.48047 C 266.99206,247.16816 265.33191,251.17206 262.01172,254.49219 C 258.69129,257.81268 254.62228,259.47283 249.80469,259.47266 C 245.11708,259.47283 241.11318,257.81268 237.79297,254.49219 C 234.47256,251.17206 232.81241,247.16816 232.8125,242.48047 C 232.81241,237.79317 234.47256,233.78926 237.79297,230.46875 C 241.11318,227.14865 245.18219,225.48849 250,225.48828 L 250,225.48828 z M 355.27344,310.44922 L 144.72656,310.44922 L 144.72656,294.43359 L 355.27344,294.43359 L 355.27344,310.44922 z M 250,346.58203 C 254.81759,346.58212 258.8866,348.27483 262.20703,351.66016 C 265.52722,355.04565 267.18737,359.08211 267.1875,363.76953 C 267.18737,368.4571 265.49467,372.49355 262.10938,375.87891 C 258.72384,379.26438 254.68739,380.95709 250,380.95703 C 245.31239,380.95709 241.27594,379.26438 237.89062,375.87891 C 234.50511,372.49355 232.81241,368.4571 232.8125,363.76953 C 232.81241,359.08211 234.47256,355.04565 237.79297,351.66016 C 241.11318,348.27483 245.18219,346.58212 250,346.58203 L 250,346.58203 z"
+       id="text2464" />
+  </g>
+</svg>

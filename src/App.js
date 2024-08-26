@@ -6,14 +6,17 @@ import Screen from './components/screen.js';
 function App() {
   
   const [value, setValue] = useState('');
+  const [prevValue, setPrevValue] = useState('');
 
   const handleClick = (val) => {
     switch(val) {
       case 'all-clear':
         setValue('');
+        setPrevValue('');
       break;
       case '=':
         try {
+          setPrevValue(value);
           setValue(eval(value));
         } catch {
           setValue('Error');
@@ -73,7 +76,7 @@ function App() {
 
   return (
     <div className="calculator">
-        <Screen value={value} />
+        <Screen value={value} prevValue = {prevValue} />
         <Keypad handleClick={handleClick} />
     </div>
   );    

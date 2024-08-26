@@ -1,101 +1,131 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Arial', sans-serif;
-  background-color: #c1c5d4;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("./assest/bg-calc.jpg");
+  background-size: cover; /* This makes the background image cover the entire element */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-position: center; /* This centers the image within the element */
+  position: relative;
 }
 
 .calculator {
-  border-radius: 8px;
+  border-radius: 60px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 600px;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #313a53, #1A1A2E);
+  width: 400px;
+  box-shadow: 35px 35px 60px rgba(26, 26, 46, 0.6);
+
 }
 
 .calculator-screen {
-  background-color: #252525;
+  background-color: transparent;
   padding-right: 20px;
-  padding-left: 20px; 
-  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .calculator-input {
   width: 100%;
-  height: 120px;
-  background-color: #252525;
+  height: 100px;
   color: #ffffff;
+  background-color: transparent;
   border: none;
+  font-size: 3rem;
   text-align: right;
-  font-size: 2.5rem;
+}
+
+.main-screen {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.previous {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #747e9b;
 }
 
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  background-color: #d4d4d2;
-  padding: 20px;
+  background-color: transparent;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 button {
-  height: 120px;
+  color: white;
   font-size: 2rem;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  background: radial-gradient(farthest-corner, #ffffff, #dadada);
-}
-
-button:hover {
-  background-color: #f0f0f0;
-}
-
-.operator {
-  background: linear-gradient(45deg, #ff5100, #ffc401);
-  color: white;
-}
-
-.operator:hover {
-  background: linear-gradient(45deg, #ff7536, #fad046);
-}
-
-.equal-sign {
-  background: linear-gradient(45deg, #008f1f, #88ff01);
-  color: white;
-  grid-column: span 2;
-}
-
-.zero {
-  grid-column: span 2;
-}
-
-.equal-sign:hover {
-  background: linear-gradient(45deg, #02c72d, #c8ff01);
 }
 
 .all-clear {
-  background: linear-gradient(45deg, #e90000, #ff5e01);
-  color: white;
+  height: 80px;
 }
 
-.all-clear:hover {
-  background: linear-gradient(45deg, #ff1010, #ff9101);
+.oprands {
+  height: 80px;
+  border: 5px solid transparent;
+  background: linear-gradient(345deg, #2a2a3f, #1f2638) padding-box,
+  linear-gradient(315deg, #1A1A2E, #313a53) border-box;
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.delete {
-  background: linear-gradient(45deg, #7e0101, #ff0101);
-  color: white;
+.oprands:hover {
+  border: 5px solid transparent;
+  background: linear-gradient(345deg, #363650, #1f2638) padding-box,
+  linear-gradient(315deg, #1A1A2E, #313a53) border-box;
+  border-radius: 25px;
 }
 
-.delete:hover {
-  background: linear-gradient(45deg, #ad0000, #ff4901);
+.operator {
+  height: 80px;
+  border: 5px solid transparent;
+  background: linear-gradient(135deg, #ff1100, #ff8801) padding-box,
+  linear-gradient(45deg, #ff8801, #ff1100) border-box;
+  border-radius: 25px;
+  font-size: 2.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.decimal {
-  background-color: #e0e0e0;
+.operator:hover {
+  border: 5px solid transparent;
+  background: linear-gradient(135deg, #fc4235, #f7972a) padding-box,
+  linear-gradient(45deg, #ff8801, #ff1100) border-box;
+  border-radius: 25px;
+}
+
+.top-btn {
+  height: 80px;
+  border: 5px solid transparent;
+  background: linear-gradient(345deg, rgb(84, 95, 128), #37445c) padding-box,
+  linear-gradient(315deg, #37445c, #506080) border-box;
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-btn:hover {
+  height: 80px;
+  border: 5px solid transparent;
+  background: linear-gradient(345deg, rgb(97, 109, 145), #37445c) padding-box,
+  linear-gradient(315deg, #37445c, #506080) border-box;
+  border-radius: 25px;
+}
+
+
+
+.zero {
+  grid-column: span 2;
 }
